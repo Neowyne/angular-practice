@@ -13,12 +13,32 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+<<<<<<< HEAD
+=======
+
+            "optimization": false,
+            "outputHashing": "none",
+            "sourceMap": false,
+            "extractCss": true,
+            "namedChunks": false,
+            "showCircularDependencies": false,
+            "aot": true,
+            "extractLicenses": false,
+            "statsJson": false,
+            "progress": true,
+            "vendorChunk": true,
+            "buildOptimizer": false,
+
+>>>>>>> ff5c46e34042d62e310f50f4b7d9cfe42d8dfe3f
             "outputPath": "dist/pipe-directive-demo",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
+<<<<<<< HEAD
             "aot": false,
+=======
+>>>>>>> ff5c46e34042d62e310f50f4b7d9cfe42d8dfe3f
             "assets": [
               "src/favicon.ico",
               "src/assets"
@@ -116,7 +136,13 @@
           }
         }
       }
+<<<<<<< HEAD
     }
   },
   "defaultProject": "pipe-directive-demo"
 }
+=======
+    }},
+  "defaultProject": "pipe-directive-demo"
+}
+>>>>>>> ff5c46e34042d62e310f50f4b7d9cfe42d8dfe3f

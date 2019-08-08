@@ -1,19 +1,32 @@
+<<<<<<< HEAD
 <div class="container container-fluid">
+=======
+<div class="container-fluid">
+>>>>>>> ff5c46e34042d62e310f50f4b7d9cfe42d8dfe3f
   <div class="row">
     <div class="col-12">
       <h1>Pipe & Directive Demo</h1>
     </div>
   </div>
+<<<<<<< HEAD
   <div class="row">
     <div class="col-3">
       <select [(ngModel)]="filterKey"
               class="form-control">
         <option value="name"
                 selected>Name</option>
+=======
+
+  <div class="row">
+    <div class="col-3">
+      <select [(ngModel)]="filterKey" class="form-control">
+        <option value="name">Name</option>
+>>>>>>> ff5c46e34042d62e310f50f4b7d9cfe42d8dfe3f
         <option value="email">Email</option>
       </select>
     </div>
     <div class="col-3">
+<<<<<<< HEAD
       <input [(ngModel)]="filterPhrase"
              type="text"
              class="form-control">
@@ -22,6 +35,15 @@
   <div class="row">
     <div class="col-12">
       <table class="table table-striped table-active">
+=======
+      <input [(ngModel)]="filterPhrase" type="text" class="form-control">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-12">
+      <table class="table table-striped">
+>>>>>>> ff5c46e34042d62e310f50f4b7d9cfe42d8dfe3f
         <thead>
           <tr>
             <th>#</th>
@@ -31,6 +53,7 @@
             <th>Male</th>
           </tr>
         </thead>
+<<<<<<< HEAD
         <tbody>
           <tr *ngFor="let student of studentList | filter:filterKey:filterPhrase, index as i">
             <td>{{ (i+1) }}</td>
@@ -50,3 +73,32 @@
 <pre>
   {{studentList | json}}
 </pre>
+=======
+
+        <tbody>
+          <tr *ngFor="let student of studentList | filter:filterKey:filterPhrase; index as i">
+            <td>{{ (i+1) }}</td>
+            <td>
+              <input class="form-control"
+                type="text"
+                [(ngModel)]="student.name">
+            </td>
+            <td>{{ student.email }}</td>
+            <td>{{ student.age }}</td>
+            <td>
+              <input type="checkbox"
+                [(ngModel)]="student.gender">
+            </td>
+          </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+
+</div>
+
+<pre>
+  {{ studentList | json }}
+</pre>
+>>>>>>> ff5c46e34042d62e310f50f4b7d9cfe42d8dfe3f
