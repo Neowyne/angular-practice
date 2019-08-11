@@ -1,0 +1,57 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-10 offset-1">
+            <h1 class="text-center">{{ title }}</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <input type="text"
+                   name="search-box"
+                   id="search-box"
+                   class="form-control text-secondary"
+                   placeholder="filter this table"
+                   [(ngModel)]="filterPhrase">
+        </div>
+        <div class="col align-self-end">
+            <button class="btn btn-warning">
+                <a routerLink="/new-user">Create New User</a>
+            </button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <table class="table table-primary text-center">
+                <thead>
+                    <tr>
+                        <th (click)="onSort('id')">#</th>
+                        <th (click)="onSort('name')">Name</th>
+                        <th (click)="onSort('isActive')">Active</th>
+                        <th (click)="onSort('age')">Age</th>
+                        <th (click)="onSort('email')">Email</th>
+                        <th (click)="onSort('phone')">Phone</th>
+                        <th>&nbsp;</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr
+                        *ngFor="let user of userList|filter: filterPhrase:changeCounter |sorter: orderKey:orderDirection:changeCounter">
+                        <td>{{ user.id }}</td>
+                        <td>{{ user.name.last }} {{ user.name.first }}</td>
+                        <td>{{ user.isActive }}</td>
+                        <td>{{ user.age }}</td>
+                        <td>{{ user.email }}</td>
+                        <td>{{ user.phone }}</td>
+                        <td>
+                            <button class="btn btn-dark"
+                                    routerLink="/users/{{user.id}}">Edit</button>
+                            <button class="btn btn-danger"
+                                    (click)="deletePrompt(user)">Delete</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

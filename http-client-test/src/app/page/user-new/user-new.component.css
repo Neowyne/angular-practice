@@ -1,0 +1,6 @@
+.form-group > input {
+    box-sizing: border-box;
+    box-align: center;
+    align-content: center;
+    width: 50%;
+}
