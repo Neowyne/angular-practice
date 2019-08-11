@@ -9,7 +9,7 @@
       "age": 340,
       "eyeColor": "brown",
       "name": {
-        "first": "Maggie",
+        "first": "Jake",
         "last": "Wilkinson"
       },
       "company": "GLASSTEP",
@@ -55,62 +55,6 @@
       ],
       "greeting": "Hello, Margie! You have 5 unread messages.",
       "favoriteFruit": "banana"
-    },
-    {
-      "id": 5,
-      "guid": "1e5a0f2e-4f79-49ad-a248-1c9a43e13828",
-      "isActive": false,
-      "balance": "$1,288.82",
-      "picture": "http://placehold.it/32x32",
-      "age": 27,
-      "eyeColor": "green",
-      "name": {
-        "first": "Rush",
-        "last": "Merritt"
-      },
-      "company": "NITRACYR",
-      "email": "rush.merritt@nitracyr.biz",
-      "phone": "+1 (863) 411-2273",
-      "address": "413 River Street, Forestburg, Minnesota, 3890",
-      "about": "Non exercitation excepteur ullamco qui ut. Nostrud ad eu laborum eiusmod aute est excepteur sint ut aliqua tempor cillum reprehenderit qui. Veniam proident amet laboris in excepteur nostrud voluptate reprehenderit deserunt qui do aute laboris.",
-      "registered": "Wednesday, June 24, 2015 10:07 PM",
-      "latitude": "-85.302388",
-      "longitude": "-24.208209",
-      "tags": [
-        "esse",
-        "eiusmod",
-        "aliquip",
-        "occaecat",
-        "officia"
-      ],
-      "range": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        9
-      ],
-      "friends": [
-        {
-          "id": 0,
-          "name": "Patrick Velez"
-        },
-        {
-          "id": 1,
-          "name": "Robin Deleon"
-        },
-        {
-          "id": 2,
-          "name": "Josie Christensen"
-        }
-      ],
-      "greeting": "Hello, Rush! You have 5 unread messages.",
-      "favoriteFruit": "apple"
     },
     {
       "id": 6,
@@ -5455,6 +5399,19 @@
       "age": 18,
       "email": "shsfgh",
       "phone": "5466786767",
+      "balance": 0,
+      "favoriteFruit": ""
+    },
+    {
+      "id": 103,
+      "name": {
+        "first": "aslfjaéslkga",
+        "last": "éfkéfgjs-df"
+      },
+      "isActive": false,
+      "age": 18,
+      "email": "sdéfjsdlogf@goerowjif.hu",
+      "phone": "68765685454",
       "balance": 0,
       "favoriteFruit": ""
     }
