@@ -1,0 +1,13 @@
+table {
+    background-color: #ff995eaa;
+}
+.btn-light:hover {
+color:   #fff;
+background-color: #f00a;
+}
+.search-box:focus {
+    border-color:#f00a;
+}
+::placeholder {
+    color: #6669;
+}
