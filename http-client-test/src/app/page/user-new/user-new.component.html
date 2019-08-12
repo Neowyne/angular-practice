@@ -1,7 +1,7 @@
-<h1 class="text-center">Add a New User</h1>
+<h1 class="text-center text-success">Add a New User</h1>
 
-<div class="container">
-    <div class="col-12">
+<div class="container-fluid">
+    <div class="col offset-3">
         <form action=""
               (submit)="onSubmit($event)">
 
@@ -50,13 +50,15 @@
                        [(ngModel)]="newUser.phone">
             </div>
 
-            <div class="row">
-                <div class="col-12 text-center">
+
+            <div class="row align-center">
+                <div class="col text-center">
                     <button class="btn btn-outline-success">Create</button>
                     <button class="btn btn-outline-danger"
                             (click)="onCancel()">Cancel</button>
                 </div>
             </div>
+
 
         </form>
     </div>

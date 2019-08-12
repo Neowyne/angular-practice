@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { User } from 'src/app/model/user';
-import { Subscribable, Subscription } from 'rxjs';
 import { UserService } from 'src/app/service/user.service';
 
 @Component({

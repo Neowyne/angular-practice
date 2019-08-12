@@ -1,10 +1,10 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-10 offset-1">
-            <h1 class="text-center">{{ title }}</h1>
+            <h1 class="text-center text-warning">{{ title }}</h1>
         </div>
     </div>
-    <div class="row">
+    <div class="row justify-content-between">
         <div class="col-4">
             <input type="text"
                    name="search-box"
@@ -13,9 +13,9 @@
                    placeholder="filter this table"
                    [(ngModel)]="filterPhrase">
         </div>
-        <div class="col align-self-end">
+        <div class="col-2">
             <button class="btn btn-outline-warning">
-                <a routerLink="/new-user">Create New User</a>
+                <span routerLink="/new-user">Create New User</span>
             </button>
         </div>
     </div>

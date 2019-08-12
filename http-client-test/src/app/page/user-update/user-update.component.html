@@ -1,8 +1,8 @@
-<h1 class="text-center">Edit Existing User</h1>
+<h1 class="text-center text-danger">Edit Existing User</h1>
 
 
 <div class="container">
-    <div class="col-12">
+    <div class="col offset-3">
         <form action=""
               (submit)="onSubmit($event)">
 
@@ -46,8 +46,8 @@
                        [(ngModel)]="user.phone">
             </div>
 
-            <div class="row">
-                <div class="col-12 text-center">
+            <div class="row align-center">
+                <div class="col text-center">
                     <button class="btn btn-outline-success">Update</button>
                     <button class="btn btn-outline-danger"
                             routerLink="/users">Cancel</button>
