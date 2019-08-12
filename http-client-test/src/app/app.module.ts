@@ -12,6 +12,7 @@ import { UserNewComponent } from './page/user-new/user-new.component';
 import { UserUpdateComponent } from './page/user-update/user-update.component';
 import { FilterPipe } from './pipe/filter.pipe';
 import { SorterPipe } from './pipe/sorter.pipe';
+import { AboutComponent } from './page/about/about.component';
 
 const appRoutes: Routes = [
   {
@@ -29,6 +30,10 @@ const appRoutes: Routes = [
   {
     path: "new-user",
     component: UserNewComponent
+  },
+  {
+    path: "about",
+    component: AboutComponent
   }
 
 ];
@@ -42,7 +47,8 @@ const appRoutes: Routes = [
     UserNewComponent,
     UserUpdateComponent,
     FilterPipe,
-    SorterPipe
+    SorterPipe,
+    AboutComponent
   ],
   imports: [
     FormsModule,
