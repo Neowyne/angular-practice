@@ -16,7 +16,7 @@
                     </div>
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item text-success">Active users:</li>
-                        <li class="list-group-item text-success">Inactive users:</li>
+                        <li class="list-group-item text-success">Inactive users: {{ userInactiveAmount }}</li>
                         <li class="list-group-item text-success">Users in total:</li>
                     </ul>
                     <button class="btn btn-block">
@@ -40,7 +40,7 @@
                     </div>
 
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item text-dark">Total Balance:</li>
+                        <li class="list-group-item text-dark">Total Balance: {{ getBalance() }}</li>
                     </ul>
                     <button class="btn btn-block">
                         <a routerLink="/users"
@@ -63,9 +63,9 @@
                     </div>
 
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item text-danger">Apples: </li>
-                        <li class="list-group-item text-danger">Strawberries: </li>
-                        <li class="list-group-item text-danger">Bananas:</li>
+                        <li class="list-group-item text-danger">Apples: {{ getFavoriteApple() }}</li>
+                        <li class="list-group-item text-danger">Strawberries: {{ getFavoriteStrawberry() }}</li>
+                        <li class="list-group-item text-danger">Bananas: {{ getFavoriteBanana() }}</li>
                     </ul>
                     <button class="btn btn-block">
                         <a routerLink="/users"
