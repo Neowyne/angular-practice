@@ -4,4 +4,16 @@
 }
 .heart-icon {
     color: #e8bf8b;
+    opacity: .7;
+}
+.dollar-icon {
+    color: #fff;
+}
+.users-icon {
+    color: #0ff;
+    opacity: .4
+}
+.users-title {
+    color: #0ff;
+    opacity: 1.7;
 }
