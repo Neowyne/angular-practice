@@ -5414,6 +5414,19 @@
       "phone": "68765685454",
       "balance": 0,
       "favoriteFruit": ""
+    },
+    {
+      "id": 104,
+      "name": {
+        "first": "q morgan",
+        "last": "meier"
+      },
+      "isActive": false,
+      "age": 25,
+      "email": "qm@gmail.com",
+      "phone": "+1 23 456 7891",
+      "balance": 0,
+      "favoriteFruit": ""
     }
   ]
 }
