@@ -15,7 +15,15 @@ module.exports = class DB {
         return new Promise((resolve, reject) => {
             if (id == 0) {
                 this.getJsonArray().then(
-                    dataArray => resolve(dataArray)
+                    dataArray => resolve(dataArray),
+                    err => reject(err)
+                );
+            } else {
+                this.getJsonArray().then(
+                    dataArray => {
+                        let found = dataArray.filter(item => item.id == id)[0] || {};
+                        resolve(found);
+                    }
                 )
             }
         })
