@@ -19,9 +19,10 @@ export class OrderService {
   ) { }
 
   getAll(): Observable<any> {
-    return this.http.get('http://localhost:3210/orders');
+    return this.http.get('http://localhost:3210');
 
-    /* return new Observable(observer => {
+
+    /* return new Observable( observer => {
       observer.next(this.orders);
     }); */
   }

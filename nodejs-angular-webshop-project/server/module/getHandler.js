@@ -7,12 +7,13 @@ module.exports = class GetHandler {
 
         const ordersDB = new DB(reqParams[1]);
         const id = reqParams[2] || 0;
-        ordersDB.find(reqParams[2]).then(
+        ordersDB.find(id).then(
             data => res.end(JSON.stringify(data)),
             err => {
                 res.statusCode = 404;
                 res.end(JSON.stringify(err));
             }
         );
+
     }
-}
+};
