@@ -1,4 +1,5 @@
 [
+<<<<<<< HEAD
     {
         "id": 1,
         "product": 3,
@@ -9,3 +10,15 @@
         "shippingAddress": "Bp, Nagy Kálmán tér 5."
     }
 ]
+=======
+  {
+    "id": 1,
+    "product": 3,
+    "insdate": "2019-08-16",
+    "quantity": 3,
+    "userName": "Nagy Piroska",
+    "userEmail": "npm@gmail.com",
+    "shippingAddress": "Bp, Nagy Kálmán tér 5."
+  }
+]
+>>>>>>> 144301cba7e18638c5a0bba2887f52b0be221d99
