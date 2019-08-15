@@ -5,8 +5,9 @@ module.exports = class GetHandler {
 
         const reqParams = req.url.split('/');
 
-        const ordersDB = new DB('orders');
-        ordersDB.find().then(
+        const ordersDB = new DB(reqParams[1]);
+        const id = reqParams[2] || 0;
+        ordersDB.find(reqParams[2]).then(
             data => res.end(JSON.stringify(data)),
             err => {
                 res.statusCode = 404;
