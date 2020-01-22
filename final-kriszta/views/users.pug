@@ -1,0 +1,32 @@
+extends layout
+
+block content
+  .row
+    .col-12
+      h1.text-center.text-info Members of our company!
+      
+  .row
+    .col-12
+      table.table.table-info.table-striped.text-center
+        thead
+          tr
+            th ID
+            th Name
+            th Email
+            th Age
+            th Address
+            th City
+            th Zip
+            th Hobby
+        tbody
+          each user in users
+            tr 
+              td #{user.id}
+              td #{user.name}
+              td #{user.email}
+              td #{user.age}
+              td #{user.address}
+              td #{user.city}
+              td #{user.zip}
+              td #{user.hobby}
+              
